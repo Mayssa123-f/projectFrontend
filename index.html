@@ -7,75 +7,113 @@
     <title>Internify – Find Your Future Internship</title>
   </head>
   <body>
-    <nav class="mainNav">
-      <h2 class="logo">Internify</h2>
-      <ul class="navList">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="internships.html">Browse Internships</a></li>
-        <li><a href="post.html">Post Internship</a></li>
-        <li><a href="aboutUs.html">About Us</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="login.html">Account</a></li>
-      </ul>
-    </nav>
-
-    <!-- <section class="banner">
-      <p>
-        Discover exciting internship opportunities across various industries.
-      </p>
-    </section> -->
-
-    <div class="container">
-      <div class="image-container">
-        <img
-          class="centered-image"
-          src="images/back.png"
-          alt="Explore Internship Programs"
-        />
-      </div>
-      <div class="text-container">
-        <h2>Popular Internship Tracks</h2>
-        <ul>
-          <li>Cybersecurity</li>
-          <li>Software Engineering</li>
-          <li>User Experience (UX)</li>
-          <li>Digital Marketing & Ecommerce</li>
-          <li>Content & Social Media</li>
-          <li>Mobile App Development</li>
-          <li>Web Development</li>
-          <li>API Integration</li>
-          <li>Cloud & SaaS</li>
-          <li>Data Science & AI</li>
+    <div class="site-wrapper">
+      <nav class="mainNav">
+        <button class="hamburger" onclick="toggleSidebar()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <h2 class="logo">Internify</h2>
+        <ul class="navList">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="internships.html">Browse Internships</a></li>
+          <li><a href="post.html">Post Internship</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Account</a></li>
         </ul>
-      </div>
+      </nav>
+      <section class="sidebar" id="sidebar">
+        <button class="close-btn" onclick="closeSidebar()">&times;</button>
+        <h2 class="logo">Internify</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="internships.html">Browse Internships</a></li>
+          <li><a href="post.html">Post Internship</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Account</a></li>
+        </ul>
+      </section>
+
+      <main>
+        <header class="banner">
+          <div class="banner-overlay">
+            <h1>Your Future Starts Here</h1>
+            <p>Browse internships across tech, design, marketing, and more.</p>
+          </div>
+        </header>
+
+        <!-- Internship Tracks Section -->
+        <section class="internship-tracks">
+          <div class="container">
+            <div class="image-container">
+              <img
+                class="centered-image"
+                src="images/back.png"
+                alt="Explore Internship Programs"
+              />
+            </div>
+            <div class="text-container">
+              <h2>Popular Internship Tracks</h2>
+              <ul>
+                <li>Cybersecurity</li>
+                <li>Software Engineering</li>
+                <li>User Experience (UX)</li>
+                <li>Digital Marketing & Ecommerce</li>
+                <li>Content & Social Media</li>
+                <li>Mobile App Development</li>
+                <li>Web Development</li>
+                <li>API Integration</li>
+                <li>Cloud & SaaS</li>
+                <li>Data Science & AI</li>
+              </ul>
+              <p>
+                Whether you're a student or a recent graduate, Internify
+                connects you with companies offering meaningful internships to
+                launch your career.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-section">
+          <h2>Contact Us</h2>
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </section>
+      </main>
+
+      <footer>
+        <p>
+          &copy; 2025 Internify. All rights reserved. Connecting talent with
+          opportunity.
+        </p>
+      </footer>
     </div>
-    <section class="contact-section">
-      <h2>Contact Us</h2>
-      <form class="contact-form">
-        <div class="form-group">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
-        </div>
-
-        <div class="form-group">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-        </div>
-
-        <div class="form-group">
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-        </div>
-
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
-
-    <footer>
-      <p>
-        &copy; 2025 Internify. All rights reserved. Connecting talent with
-        opportunity.
-      </p>
-    </footer>
+    <script src="functions.js"></script>
   </body>
 </html>
