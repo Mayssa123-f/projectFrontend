@@ -7,44 +7,59 @@
     <title>Internify – Find Your Future Internship</title>
   </head>
   <body>
-    <div class="site-wrapper">
-      <nav class="mainNav">
-        <button class="hamburger" onclick="toggleSidebar()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <h2 class="logo">Internify</h2>
-        <ul class="navList">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="internships.html">Browse Internships</a></li>
-          <li><a href="post.html">Post Internship</a></li>
-          <li><a href="aboutUs.html">About Us</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="login.html">Account</a></li>
-        </ul>
-      </nav>
-      <section class="sidebar" id="sidebar">
-        <button class="close-btn" onclick="closeSidebar()">&times;</button>
-        <h2 class="logo">Internify</h2>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="internships.html">Browse Internships</a></li>
-          <li><a href="post.html">Post Internship</a></li>
-          <li><a href="aboutUs.html">About Us</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="login.html">Account</a></li>
-        </ul>
-      </section>
+    <nav class="mainNav">
+      <button class="hamburger" onclick="toggleSidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <a href="index.html">
+        <img
+          src="images/logoo.png"
+          alt="Internify Logo"
+          style="height: 100px; width: 100px"
+        />
+      </a>
 
+      <ul class="navList">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="internships.html">Browse Internships</a></li>
+        <li><a href="post.html">Post Internship</a></li>
+        <li><a href="aboutUs.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Account</a></li>
+      </ul>
+    </nav>
+    <section class="sidebar" id="sidebar">
+      <button class="close-btn" onclick="closeSidebar()">&times;</button>
+      <a href="index.html">
+        <img
+          src="images/logoo.png"
+          alt="Internify Logo"
+          style="height: 50px; width: 80px"
+        />
+      </a>
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="internships.html">Browse Internships</a></li>
+        <li><a href="post.html">Post Internship</a></li>
+        <li><a href="aboutUs.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Account</a></li>
+      </ul>
+    </section>
       <main>
-        <header class="banner">
+        <section class="banner">
+          <img src="images/backk.jpg" alt="Banner" class="banner-img" />
           <div class="banner-overlay">
-            <h1>Your Future Starts Here</h1>
-            <p>Browse internships across tech, design, marketing, and more.</p>
+            <div class="banner-content">
+              <h1>Welcome to Internify</h1>
+              <p>Your gateway to internship opportunities</p>
+            </div>
           </div>
-        </header>
-
+        </section>
+<div class="site-wrapper">
         <!-- Internship Tracks Section -->
         <section class="internship-tracks">
           <div class="container">
@@ -106,14 +121,14 @@
           </form>
         </section>
       </main>
-
-      <footer>
-        <p>
-          &copy; 2025 Internify. All rights reserved. Connecting talent with
-          opportunity.
-        </p>
-      </footer>
     </div>
+
+    <footer>
+      <p>
+        &copy; 2025 Internify. All rights reserved. Connecting talent with
+        opportunity.
+      </p>
+    </footer>
     <script src="functions.js"></script>
   </body>
 </html>
