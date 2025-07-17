@@ -8,19 +8,18 @@
   </head>
   <body>
     <nav class="mainNav">
-      <button class="hamburger" onclick="toggleSidebar()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <a href="index.html">
+      <a href="index.html" class="logo">
         <img
           src="images/logoo.png"
           alt="Internify Logo"
           style="height: 100px; width: 100px"
         />
       </a>
-
+<button class="hamburger" onclick="toggleSidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <ul class="navList">
         <li><a href="index.html">Home</a></li>
         <li><a href="internships.html">Browse Internships</a></li>
@@ -66,7 +65,7 @@
             <div class="image-container">
               <img
                 class="centered-image"
-                src="images/back.png"
+                src="images/im.jpg"
                 alt="Explore Internship Programs"
               />
             </div>
@@ -95,31 +94,33 @@
 
         <!-- Contact Form Section -->
         <section class="contact-section">
-          <h2>Contact Us</h2>
-          <form class="contact-form">
-            <div class="form-group">
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="name" required />
-            </div>
+  <h2>Contact Us</h2>
+  <form class="contact-form">
+    <div class="form-group">
+      <input type="text" id="name" name="name" placeholder="Name" required />
+    </div>
 
-            <div class="form-group">
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required />
-            </div>
+    <div class="form-group">
+      <input type="email" id="email" name="email" placeholder="Email" required />
+    </div>
 
-            <div class="form-group">
-              <label for="message">Message:</label>
-              <textarea
-                id="message"
-                name="message"
-                rows="5"
-                required
-              ></textarea>
-            </div>
+    <div class="form-group">
+      <textarea
+        id="message"
+        name="message"
+        rows="5"
+        placeholder="Message"
+        required
+      ></textarea>
+    </div>
 
-            <button type="submit">Send Message</button>
-          </form>
-        </section>
+  <div class="button-wrapper">
+  <button type="submit">Send Message</button>
+</div>
+
+  </form>
+</section>
+
       </main>
     </div>
 
