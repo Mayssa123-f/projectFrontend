@@ -7,20 +7,21 @@
     <title>Internify – Find Your Future Internship</title>
   </head>
   <body>
-    <nav class="mainNav">
-      <div class="headerContainer">
+   <nav class="mainNav">
+  <div class="headerContainer">
+    <div class="logoContainer">
       <a href="index.html" class="logo">
-        <img
-          src="images/logoo.png"
-          alt="Internify Logo"
-          style="height: 100px; width: 100px"
-        />
+        <img src="images/logoo.png" alt="Internify Logo" style="height: 100px; width: 100px" />
       </a>
-<button class="hamburger" onclick="toggleSidebar()">
+    </div>
+
+    <div class="navContainer">
+      <button class="hamburger" onclick="toggleSidebar()">
         <span></span>
         <span></span>
         <span></span>
       </button>
+
       <ul class="navList">
         <li><a href="index.html">Home</a></li>
         <li><a href="internships.html">Browse Internships</a></li>
@@ -29,8 +30,10 @@
         <li><a href="contact.html">Contact</a></li>
         <li><a href="login.html">Account</a></li>
       </ul>
-      </div>
-    </nav>
+    </div>
+  </div>
+</nav>
+
     <section class="sidebar" id="sidebar">
       <button class="close-btn" onclick="closeSidebar()">&times;</button>
       <a href="index.html">

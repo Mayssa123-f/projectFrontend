@@ -105,7 +105,7 @@ body {
 }
 
 .site-wrapper {
-  max-width: 100%;
+  width: 100%;
   margin-top: 20px;
   display: flex;
   flex-direction: column;
@@ -129,7 +129,7 @@ main {
     align-items: center;
     justify-content: center;
     gap: 40px;
-    max-width: 100%;
+    width: 100%;
     padding: 20px;
     margin-top: 150px;
   }
@@ -143,15 +143,26 @@ main {
   }
 
   .text-container {
-    max-width: 100%;
     color: #252424;
   }
   .headerContainer {
-    max-width: 100%;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
+
+  .logoContainer {
+    flex: 1;
+  }
+  .navList {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+  }
+
   .banner {
     position: relative;
     width: 100%;
@@ -178,7 +189,7 @@ main {
   .banner-content {
     color: white;
     text-align: center;
-    max-width: 100%;
+    width: 100%;
     padding: 20px;
   }
   .banner-content h1 {
@@ -226,25 +237,8 @@ main {
   .mainNav {
     background-color: #0f0f0f;
     color: white;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    /* padding: 20px 40px; */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   }
-
-  .mainNav .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: red;
-  }
-
-  .navList {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-  }
-
   .navList li a {
     text-decoration: none;
     color: white;
@@ -261,19 +255,30 @@ main {
     background-color: #0f0f0f;
     width: 100%;
     padding: 10px 16px;
-    display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
   }
+  .headerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logoContainer {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .navContainer {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
 
   .navList {
     display: none;
-  }
-
-  .logo img {
-    height: 60px;
-    width: auto;
   }
   .banner {
     position: relative;
@@ -316,7 +321,7 @@ main {
     color: white;
     margin: 0;
     text-align: center;
-    max-width: 100%;
+    max-width: 1200px;
   }
 
   .hamburger {
@@ -418,8 +423,8 @@ main {
 
   .image-container img {
     margin-top: 20px;
-    width: 300px;
-    max-width: 100%;
+    width: 100%;
+    max-width: 300px;
     height: auto;
     border-radius: 10%;
     object-fit: cover;
@@ -433,11 +438,10 @@ main {
     gap: 20px;
     padding: 0;
     width: 100%;
-    max-width: 100%;
+    max-width: 600px;
   }
 
   .text-container {
-    max-width: 100%;
     color: #252424;
     text-align: left;
     font-size: 15px;
@@ -447,7 +451,7 @@ main {
 
   .contact-section {
     width: 100%;
-    max-width: 100%;
+    max-width: 600px;
     margin: 40px 0;
     padding: 20px;
     background-color: whitesmoke;
@@ -467,8 +471,8 @@ main {
   }
 
   .contact-form {
-    width: 400px;
-    max-width: 100%;
+    width: 100%;
+    max-width: 400px;
   }
 
   .form-group {
@@ -522,7 +526,7 @@ main {
   }
 
   .image-container img {
-    max-width: 100%;
+    width: 100%;
   }
 
   .text-container {
@@ -571,8 +575,8 @@ main {
   }
 
   .image-container img {
-    max-width: 100%;
-    width: 350px;
+    max-width: 350px;
+    width: 100%;
   }
 
   .text-container {
@@ -606,23 +610,23 @@ main {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    max-width: 100%;
+    width: 100%;
   }
 
   .image-container img {
     width: 100%;
-    max-width: 100%;
+    /* max-width: 100%; */
   }
 
   .text-container {
     text-align: center;
-    max-width: 90%;
+    width: 90%;
     font-size: 16px;
     padding: 0 10px;
   }
   .contact-section {
     width: 100%;
-    max-width: 100%;
+    /* max-width: 100%; */
     margin: 40px 0;
     padding: 20px;
   }
@@ -630,12 +634,27 @@ main {
     background-color: #0f0f0f;
     width: 100%;
     padding: 10px 16px;
-    display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
   }
+  .headerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
+  .logoContainer {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .navContainer {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
   .navList {
     display: none;
   }
@@ -681,7 +700,7 @@ main {
     color: white;
     margin: 0;
     text-align: center;
-    max-width: 100%;
+    width: 100%;
   }
 
   .hamburger {
@@ -711,7 +730,6 @@ main {
     background-color: #0f0f0f;
     width: 100%;
     padding: 10px 16px;
-    display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
@@ -762,7 +780,7 @@ main {
     color: white;
     margin: 0;
     text-align: center;
-    max-width: 100%;
+    width: 100%;
   }
 
   .hamburger {
