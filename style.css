@@ -52,6 +52,7 @@ ul {
 .contact-form {
   display: flex;
   flex-direction: column;
+  padding: 50px;
 }
 
 .form-group {
@@ -115,6 +116,20 @@ body {
 main {
   flex: 1;
 }
+
+.contact-section {
+  box-shadow: 0 0 15px #888888;
+  margin: 50px auto;
+  background-color: whitesmoke;
+  border-radius: 12px;
+  color: #252424;
+  transition: transform 0.3s ease-in-out;
+}
+
+.contact-section:hover {
+  box-shadow: 0 0 15px #0f0f0f;
+}
+
 @media (min-width: 769px) {
   .hamburger {
     display: none;
@@ -123,7 +138,10 @@ main {
   .sidebar {
     display: none;
   }
-
+  .listing {
+    list-style: disc;
+    padding-left: 30px;
+  }
   .container {
     max-width: 1200px;
     margin: auto;
@@ -132,12 +150,12 @@ main {
     justify-content: center;
     gap: 40px;
     width: 100%;
-    padding: 20px;
     margin-top: 150px;
   }
 
   .image-container img {
     width: 100%;
+    max-width: 500px;
     border-radius: 10%;
     object-fit: cover;
     box-shadow: 0 4px 10px #252424;
@@ -145,6 +163,7 @@ main {
 
   .text-container {
     color: #252424;
+    text-align: left;
   }
   .headerContainer {
     max-width: 1200px;
@@ -216,18 +235,17 @@ main {
   }
 
   .contact-section {
-    width: 1200px;
+    max-width: 1200px;
+    box-shadow: 0 0 15px #888888;
+    width: 100%;
     margin: 50px auto;
-    padding: 20px;
     background-color: whitesmoke;
     border-radius: 12px;
     color: #252424;
     transition: transform 0.3s ease-in-out;
-    box-shadow: none;
   }
 
   .contact-section:hover {
-    transform: scale(1.05);
     box-shadow: 0 0 15px #0f0f0f;
   }
 
@@ -347,7 +365,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px;
     box-sizing: border-box;
   }
 
@@ -448,23 +465,16 @@ main {
 
   .contact-section {
     width: 100%;
-    max-width: 600px;
+    max-width: 400px;
     margin: 40px 0;
-    padding: 20px;
     background-color: whitesmoke;
     border-radius: 12px;
     color: #252424;
     transition: transform 0.3s ease-in-out;
-    box-shadow: none;
     display: flex;
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
-  }
-
-  .contact-section:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 15px #0f0f0f;
   }
 
   .contact-form {
@@ -543,10 +553,6 @@ main {
   .banner-content p {
     font-size: 14px;
   }
-
-  .contact-section {
-    padding: 10px;
-  }
 }
 @media (min-width: 1025px) and (max-width: 1440px) {
   .container {
@@ -593,10 +599,6 @@ main {
   .banner-content p {
     font-size: 15px;
   }
-
-  .contact-section {
-    padding: 16px;
-  }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
   .site-wrapper {
@@ -621,12 +623,12 @@ main {
     font-size: 16px;
     padding: 0 10px;
   }
-  .contact-section {
-    width: 100%;
-    /* max-width: 100%; */
-    margin: 40px 0;
+  /* .contact-section {
+    width: 100%; */
+  /* max-width: 100%; */
+  /* margin: 40px 0;
     padding: 20px;
-  }
+  } */
   .mainNav {
     background-color: #0f0f0f;
     width: 100%;
